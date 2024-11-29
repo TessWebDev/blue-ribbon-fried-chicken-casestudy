@@ -1,11 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Components Blue Ribbon Fried Chicken</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../CSS/main.css"/>
 </head>
 <body>
-    <h1>Web Components Go Here</h1>
+    <h1>Web Components; Blue Ribbon Fried Chicken</h1>
+ 
+    <h2>Typography</h2>
+
+    <article class="component">
+        <h3 class="component__name">Body</h3>
+        <div class="component__img">
+            <img src="../images/mainpage_about/body_paragraph.png" alt="Body Copy"/>
+        </div>
+        
+        <div class="component__code">
+            <p>It's simple, really. We are a casual spot devoted to one of everybody's favorite dishes: fried chicken. Anchored on a food we all crave, we keep the process uncomplicated and flavor-focused using just a few secret ingredients— including a spice blend we've tinkered with for just about 20 years. We're here with our fryers ready. Cluck, cluck!</p>
+            <p><a href="https://www.theinfatuation.com/new-york/guides/the-best-fried-chicken-sandwiches-in-nyc?twclid=2max87xnl878cnw6z8yihlhvu&utm_campaign=cm&utm_medium=paid_social&utm_source=twitter&utm_audience=nyc&utm_term=carousel">"The Best Fried Chicken Sandwiches In NYC"</a> <br>
+
+                - The Infatuation</p>
+        </div>
+    </article>
+
+    <article class="component">
+        <h3 class="component__name">Headings (h1, h2, ...)</h3>
+        <h3 class="component__name">Image</h3>
+        <div class="component__img">
+            <img src="../images/mainpage_about/title_text.png" alt="h1"/>
+        </div>
+        
+        <h3 class="component__name">Code</h3>
+        <div class="component__code__title">
+            <h2>WORLD FAMOUS CHICKEN</h2>
+        </div>
+    </article>
+<!--Button-->
+    <h2>Button</h2>
+    <article class="component">
+        <h3 class="component__name">Image</h3>
+        <div class="component__img">
+            <img src="../images/mainpage_about/Link_button.png" alt="View Menu Button"/>
+        </div>
+        
+        <h3 class="component__name">Code</h3>
+        <div class="component__code">
+            <button><a href="https://www.blueribbonfriedchicken.com/menu-east-village"></a>VIEW MENU</button>
+            
+        </div>
+    </article>
+<!--Main Navigation Bar-->
+    <h2>Main Nav Bar</h2>
+    <article class="component">
+        <h3 class="component__name">Image</h3>
+        <div class="component__img">
+            <img src="../images/main_navbar.png" alt="Main Navigation bar"/>
+        </div>
+        
+        <h3 class="component__name">Code</h3>
+        <div class="navbar_container">
+            <div class="navbar">
+                <div class="navbar__left">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <div class="nav__toggle">
+                                <button class="drop_button">
+                                    <a href="#!">ORDER</a>
+                                </button>
+                                <div class="dropdown_content">
+                                    <a href="#!">PICKUP AND DELIVERY</a>
+                                    <a href="#!">ORDER CATERING</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar-link" href="#!">MENU</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar-link" href="#!">ABOUT US</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar__image">
+                    <img src="../images/logos/color_noback.png" alt="Company Logo"><a href="https://www.blueribbonfriedchicken.com/"></a>
+                </div>
+
+                <div class="navbar__right">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <div class="nav__toggle">
+                                <button class="drop_button">
+                                    <a href="#!">MORE</a>
+                                </button>
+                                <div class="dropdown_content">
+                                    <a href="#!">GIFT CARDS</a>
+                                    <a href="#!">CONTACT US</a>
+                                    <a href="#!">CAREERS</a>
+                                    <a href="#!">BLOG</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar-link" href="#!">LOYALTY PROGRAM</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar-link" href="#!">SIGN IN</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar-link" href="#!">MAILING LIST</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    
+    </article>
+    <!--Footer-->
+    <h2>Footer</h2>
+
+    <article class="component">
+        <h3 class="component__name">Image</h3>
+        <div class="component__img">
+            <img src="../images/footer.png" alt="Footer"/>
+        </div>
+        
+        <h3 class="component__name">Code</h3>
+        <div class="social">
+            <ul>
+                <li><a href="#!"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#!"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="location">
+                <h4>Location</h4>
+                <a href="https://www.google.com/maps/place/Blue+Ribbon+Fried+Chicken/@40.7245411,-73.9910082,16z/data=!3m1!4b1!4m6!3m5!1s0x89c25984f733ae2f:0xa2f5befaaa3a9f1b!8m2!3d40.7245411!4d-73.9910082!16s%2Fg%2F1jkxn77h3?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D">East Village - NY</a>>
+                <a href="#!">28 East First Street <br>
+                    New York, NY 10003</a>
+                <a href="#!">(212)228-0404</a>
+                <p>Sunday - Wednesday:<br>
+                    11:00 am - 10:00pm</p>
+                <p>Thursday - Saturday: <br>
+                    11:00 am - 12:00 am</p>
+            </div>
+
+          
+        </div>
+    </article>
+
 </body>
-</html>
+</html> 

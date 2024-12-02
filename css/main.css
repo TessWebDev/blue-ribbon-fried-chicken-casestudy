@@ -28,12 +28,46 @@ body {
     line-height: 1.667;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--font-serif);
+    color: var(--black);
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
 a {
     color: var(--blue-dark);
     cursor: pointer;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+
+}
+
+.component img {
+    max-width: initial;
+}
+
+.component__img {
+    border: 1px solid #ccc;
+    overflow-x: auto;
+}
+
+.component__code {
+    border: 1px solid #ccc;
 }
 
 div {
@@ -50,7 +84,8 @@ div {
 .navbar-collapse:before, .navbar-collapse:after {
     display: table;
     content: " ";
-    
+}
+
 .navbar .container {
     display: flex;
     align-items: center;

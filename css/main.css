@@ -1,3 +1,17 @@
+:root {
+    --font-serif: "Roboto Condensed", "Oswald", "DM Sans", serif;
+    --black: #080808;
+    --blue: #337ab7;
+    --orange: #f4640b;
+    --light-grey: #e7e7e7; /*footer font*/
+    --white: #fff; /*Header and body background*/
+    --medium-grey: #333; /*above footer*/
+    --blue-dark: #0a4f8a;
+
+
+
+}
+
 html {
     box-sizing: border-box;
 }
@@ -8,8 +22,24 @@ html {
   box-sizing: border-box;
 }
 
+body {
+    font-family: var(--font-serif);
+    color: var(--black);
+    line-height: 1.667;
+}
 
+a {
+    color: var(--blue-dark);
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
 
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
 
 /*header {
     display: flex;
@@ -17,7 +47,10 @@ html {
     margin-bottom: 2%;
   }
 */
-
+.navbar-collapse:before, .navbar-collapse:after {
+    display: table;
+    content: " ";
+    
 .navbar .container {
     display: flex;
     align-items: center;
@@ -56,6 +89,7 @@ html {
     padding: 0.5rem 1rem;
     text-decoration: none;
     font: Proxima Nova;
+    color: var(--black)
 }
 
 .navbar-brand-logo {

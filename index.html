@@ -13,9 +13,9 @@
     <link href="normalize.css" rel="stylesheet" />
     <link href="CSS/main.css" rel="stylesheet"/>
 </head>
-<body>
+<body class="home-page">
     
-    <header class="navbar"> 
+    <header class="navbar home-page__header"> 
         <div class="container">   
         <nav>
             <ul class="nav-list">
@@ -32,19 +32,21 @@
         </div> <!--container end-->
     </header>
     <article class="component"> <!--About-->
-        <div class="component__code__title">
-            <p>WORLD FAMOUS CHICKEN</p>
-        </div>
-        <div class="component__code">
-            <p>It's simple, really. We are a casual spot devoted to one of everybody's favorite dishes: fried chicken. Anchored on a food we all crave, we keep the process uncomplicated and flavor-focused using just a few secret ingredients— including a spice blend we've tinkered with for just about 20 years. We're here with our fryers ready. Cluck, cluck!</p>
-            <p><a href="https://www.theinfatuation.com/new-york/guides/the-best-fried-chicken-sandwiches-in-nyc?twclid=2max87xnl878cnw6z8yihlhvu&utm_campaign=cm&utm_medium=paid_social&utm_source=twitter&utm_audience=nyc&utm_term=carousel">"The Best Fried Chicken Sandwiches In NYC"</a> <br>
+        <div class="component__about">
+            <div class="component__code__title">
+                <p>WORLD FAMOUS CHICKEN</p>
+            </div>
+            <div class="component__code">
+                <p>It's simple, really. We are a casual spot devoted to one of everybody's favorite dishes: fried chicken. Anchored on a food we all crave, we keep the process uncomplicated and flavor-focused using just a few secret ingredients— including a spice blend we've tinkered with for just about 20 years. We're here with our fryers ready. Cluck, cluck!</p>
+                <p><a href="https://www.theinfatuation.com/new-york/guides/the-best-fried-chicken-sandwiches-in-nyc?twclid=2max87xnl878cnw6z8yihlhvu&utm_campaign=cm&utm_medium=paid_social&utm_source=twitter&utm_audience=nyc&utm_term=carousel">"The Best Fried Chicken Sandwiches In NYC"</a> <br>
 
-                - The Infatuation</p>
-        </div>
-        <div class="component__code">
-            <button><a href="https://www.blueribbonfriedchicken.com/menu-east-village"></a>VIEW MENU</button>
-            
-        </div> <!--End About-->
+                    - The Infatuation</p>
+            </div>
+            <div class="component__code">
+                <button><a href="https://www.blueribbonfriedchicken.com/menu-east-village"></a>VIEW MENU</button>
+                
+            </div> 
+        </div><!--End About-->
     </article>
 
     <article class="component"> <!--Photo Grid-->
@@ -69,11 +71,31 @@
         </div>
     </article><!--End Environmental Badges-->
 
-    <article class="component"> <!--Bromberg Brothers-->
+    <article class="component__code__bromberg_bros"> <!--Bromberg Brothers-->
+        
+        <img class="navbar-brand-logo" src="components/Images/logos/bw_logo.png" alt="B&W logo"
+        <div class="bromberg_bros"> 
+            <p>THE BROMBERG BROTHERS</p>
+        </div>
+        <div class="component__code">
+            <p>How did two brothers from New Jersey become famous for serving some of the best fried chicken in the country???</p>
+        </div> 
+        <button><a href="https://www.blueribbonfriedchicken.com/menu-east-village"></a>ABOUT US</button>
 
     </article><!--End Bromberg Brothers-->
+   
+    <article class="component location"><!--Location-->
+        <h2>OUR LOCATION</h2>
+        <h3>East Village - NY</h3>
+        
+        <p>28 East First Street <br>
+            New York, NY 10003 </p>
+       
+        <p>(212) 228-0404</p>
 
-    <article class="component"><!--Location-->
+        <h3>Hours</h3>
+        <p>Sunday - Webnesday: 11:00 am - 10:00 pm</p>
+        <p>Thursday - Saturday: 11:00 am - 12:00 am</p>
 
     </article><!--End Location-->
 
@@ -84,8 +106,8 @@
             <a href="https://www.instagram.com/BlueRibbonFC/"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <div class="footer">
-            <div class="location">
-                <h3>Location</h3>
+            <div class="footer__location">
+                <p>Location</p>
                 <a href="https://www.google.com/maps/place/Blue+Ribbon+Fried+Chicken/@40.7245411,-73.9910082,16z/data=!3m1!4b1!4m6!3m5!1s0x89c25984f733ae2f:0xa2f5befaaa3a9f1b!8m2!3d40.7245411!4d-73.9910082!16s%2Fg%2F1jkxn77h3?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D">East Village - NY</a>
                 <a href="#!">28 East First Street <br>
                     New York, NY 10003</a>

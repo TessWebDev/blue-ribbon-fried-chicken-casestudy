@@ -21,12 +21,14 @@ html {
 *:before,
 *:after {
   box-sizing: border-box;
+  
 }
 
 body {
     font-family: var(--font-serif);
     color: var(--black);
     line-height: 1.667;
+    font-size: 18px;
 }
 
 h1,
@@ -42,7 +44,15 @@ h5 {
 
 h2 {
     font-size: 2.5rem;
+    font-family: "OSWALD";
+    color: var(--orange);
     
+}
+
+h3 {
+    color: var(--orange);
+    font-size: 24px;
+    font-family: "Oswald";
 }
 
 a {
@@ -81,6 +91,7 @@ button {
     border: 5px double #F4640B;
     color: #F4640B;
     box-shadow: none;
+    margin: 10px;
     border-radius: 0;
     margin-left: 0;
     margin-right: 0;
@@ -106,6 +117,25 @@ button {
     font-weight: 500;
 }
 
+.component__code__bromberg_bros {
+    padding: 50px;
+    border: 5px double var(--blue);
+    background-color: white;
+    text-align: center;
+
+}
+
+.bromberg_bros {
+    font-family: "Oswald"; 
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.location {
+    background-color: white;
+}
 /*Photo Grid*/
 
 .photo__grid {
@@ -131,7 +161,15 @@ button {
     height: auto;
     position: relative;
 }
+/** .home-page template **/
 
+.home-page__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
 /*header {
     display: flex;
     justify-content: space-between;
@@ -153,12 +191,13 @@ button {
     justify-content: space-between;
     margin: 0 auto;
     list-style: none;
-    display: flex;
+    display: center;
     vertical-align: middle;
     flex-direction: row;
     font-size: larger;
     position: sticky;
     border: 4rem;
+    background-color: white;
 
 }
 
@@ -192,9 +231,9 @@ button {
 
 /*footer*/
 
-.social {
+.social a {
     list-style: none;
-    color: var(--blue-dark);
+    color: #0095C7;
     text-align: center;
     background-color: #1f1f1f;
     padding: 10px 15px;
@@ -208,4 +247,7 @@ button {
     color: #e7e7e7;
     font-family: "DM Sans";
     list-style: none;
+}
+.footer__location {
+    background-color: #080808;
 }

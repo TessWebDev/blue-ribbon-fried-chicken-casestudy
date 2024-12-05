@@ -106,6 +106,32 @@ button {
     font-weight: 500;
 }
 
+/*Photo Grid*/
+
+.photo__grid {
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgb(58, 57, 57);
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax);
+ 
+}
+
+.badge__images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: white;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    position: relative;
+}
+
 /*header {
     display: flex;
     justify-content: space-between;

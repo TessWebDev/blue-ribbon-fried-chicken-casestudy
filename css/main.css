@@ -42,6 +42,10 @@ h5 {
     font-weight: 500;
 }
 
+h1 {
+
+}
+
 h2 {
     font-size: 2.5rem;
     font-family: "OSWALD";
@@ -160,6 +164,20 @@ button {
     bottom: 0;
     height: auto;
     position: relative;
+}
+
+.imageflash__logo {
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    border: 0;
+}
+.image__on__text {
+    position: relative;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 10% 30px;
 }
 /** .home-page template **/
 

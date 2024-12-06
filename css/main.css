@@ -143,27 +143,42 @@ button {
 /*Photo Grid*/
 
 .photo__grid {
-    display: flex;
-    flex-wrap: nowrap;
-    box-sizing: border-box;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: [first-line] repeat(4, 1fr) [last-line];
+    margin-left: auto;
+    margin-right: auto;
     background-color: rgb(58, 57, 57);
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax);
- 
+    position: relative;
+    object-fit: contain;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    word-wrap: break-word;
+}
+
+.square-img {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
+    
 }
 
 .badge__images {
     width: 100%;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    background-color: white;
+    
+    background-color: rgb(252, 252, 252);
     top: 0;
     left: 0;
     bottom: 0;
     height: auto;
     position: relative;
+    grid-row: span 1;
+    grid-column: 4;
+    object-fit: contain;
+    word-wrap: break-word;
+    padding: 50px 0;
 }
 
 .imageflash__logo {

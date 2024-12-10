@@ -13,6 +13,7 @@
 html {
     box-sizing: border-box;
     display: block;
+    -webkit-text-size-adjust: 100%;
 }
 
 *,
@@ -43,11 +44,16 @@ h4,
 h5 {
     font-family: var(--font-serif);
     color: var(--black);
-    line-height: 1.2;
+    line-height: 1.1;
     font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h1 {
+    color: white;
+    font-family: "Oswald";
+    font-size: 3.5rem;
 
 }
 
@@ -55,6 +61,7 @@ h2 {
     font-size: 2.5rem;
     font-family: "OSWALD";
     color: var(--orange);
+    display: block;
     
 }
 
@@ -62,6 +69,16 @@ h3 {
     color: var(--orange);
     font-size: 24px;
     font-family: "Oswald";
+    display: block;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
 }
 
 a {
@@ -70,6 +87,13 @@ a {
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 img {
@@ -97,10 +121,14 @@ div {
 .container {
     padding-left: 16px;
     padding-right: 16px;
-    width: 750px;
+    width: 1180px;
     margin-right: auto;
     margin-left: auto;
     
+}
+
+element.style {
+    position: relative;
 }
 
 /*World Famous Chicken*/
@@ -160,30 +188,111 @@ button {
 /*Bromberg Brothers About*/
 
 .bro_info__img {
-    padding: 10px 0 0;
-    margin: auto;
-    max-width: 250px
-   
-}
-.component__code__bromberg_bros {
-    padding: 10px 0 0;
-    border: 5px double var(--blue);
-    background-color: white;
+    flex: 1 1 auto;
+    order: 0;
+    display: flex;
     text-align: center;
+    margin: auto;
+    min-width: 250px;
     align-items: center;
-    width: 750px;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    display: block;
     
 }
 
+.bro_info-text{
+    padding: 30px 20px;
+    align-self: center;
+}
+.bromberg__box {
+    background-color: var(--white);
+    padding: 50px;
+    border: 7px double var(--blue);
+    margin: 0 auto;
+    text-align: center;
+    word-wrap: break-word;
+    align-items: center;
+    image-rendering: auto;
+    max-width: 100%;
+    width: 50%;
+    float: right;
+    
+    flex-direction: column;
+}
+
+.component__code__bromberg_bros {
+    padding: 0;
+    display: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: image-set(url(https://popmenucloud.com/cdn-cgi/image/width%3D1440%2Cheight%3D1440%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/cfeptjrd/9a2afb13-3b56-4477-ac49-9251f5f6a5bf.jpg) 1x, url(https://popmenucloud.com/cdn-cgi/image/width%3D2880%2Cheight%3D2880%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/cfeptjrd/9a2afb13-3b56-4477-ac49-9251f5f6a5bf.jpg) 2x, url(https://popmenucloud.com/cdn-cgi/image/width%3D4320%2Cheight%3D4320%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/cfeptjrd/9a2afb13-3b56-4477-ac49-9251f5f6a5bf.jpg) 3x);
+}
+
+/*Location*/
 .location {
     background-color: white;
     padding: 5rem;
-    display: grid;
+    display: table;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     margin: 50;
+    margin-top: 15px;
+    background-repeat: repeat;
+    background-position: center top;
+    background-attachment: fixed;
 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    word-wrap: break-word;
+
+}
+
+.our-location {
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+.east-village  {
+    
+    margin-bottom: 40px;
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+.hours {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    display: block;
+}
+
+.days {
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.hours-time, .hours-day {
+    font-size: 18px;
+}
+.hours-day {
+    font-weight: bold;
+    
+    margin-right: 10px;
 }
 /*Photo Grid*/
 
@@ -207,35 +316,46 @@ button {
     width: 100%;
     aspect-ratio: 1/1;
     
+    
 }
 
 /*Environmental Badges*/
 .multi_grid {
-    box-sizing: border-box;
-    display: grid;
+    
+    display: block;
     grid-template-columns: repeat(4, minmax(300px, 1fr));
+    padding: 20px;
+    background-color: rgb(252, 252, 252);
    
-    flex-grow: 0;
-    margin: 0;
-    flex-grow: 0;
     max-width: 100%;
-    flex-basis: 100%;
-    position: relative;
+    
+    
+    background-repeat: repeat;
+    background-position: center top;
+    background-attachment: fixed;
 }
 
 .badge__images {
-    
-    
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     flex-direction: row;
-    padding: 20px;
-    background-color: rgb(252, 252, 252);
-    
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+
 }
 
 .imageflash__logo {
-    vertical-align: middle;
-    overflow-clip-margin: content-box;
-    border: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-image: image-set(url(https://popmenucloud.com/cdn-cgi/image/width%3D1440%2Cheight%3D1440%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/cfeptjrd/9a2afb13-3b56-4477-ac49-9251f5f6a5bf.jpg) 1x, url(https://popmenucloud.com/cdn-cgi/image/width%3D2880%2Cheight%3D2880%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/cfeptjrd/9a2afb13-3b56-4477-ac49-9251f5f6a5bf.jpg) 2x, url(https://popmenucloud.com/cdn-cgi/image/width%3D4320%2Cheight%3D4320%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/cfeptjrd/9a2afb13-3b56-4477-ac49-9251f5f6a5bf.jpg) 3x);
 }
 .image__on__text {
     position: relative;

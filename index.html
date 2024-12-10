@@ -32,10 +32,14 @@
         </div> <!--container end-->
     </header>
 
-    <section class="imageflash__logo">
-        <img defer="" data-cy="custom_img_hi_fi" class="pm-header-bg header-bg bg-cover header-bg-hide transition-fade jss154" alt="fried chicken sandwich" src="https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/cfeptjrd/9a2afb13-3b56-4477-ac49-9251f5f6a5bf.jpg" style="transform: translateY(0px);">
+    <section class="imageflash__logo container-fluid">
+       <div class="top__logo-img">
+            <img src="../blue-ribbon-fried-chicken-casestudy/components/Images/logos/color_logo.png">
+       </div>
         <div class="image__on__text">
-            <h1>BLUE RIBBON</h1>
+            <h1 style="text-align: center;">BLUE RIBBON</h1>
+            <h1 style="text-align: center;">FRIED CHICKEN</h1>
+
         </div>
     </section>
     
@@ -47,7 +51,7 @@
             <div class="component__code">
                 <p style="text-align: center;">It's simple, really. We are a casual spot devoted to one of everybody's favorite dishes: fried chicken. Anchored on a food we all crave, we keep the process uncomplicated and flavor-focused using just a few secret ingredients— including a spice blend we've tinkered with for just about 20 years. We're here with our fryers ready. Cluck, cluck!</p>
                     <div style="text-align: center;" class="component__code">
-                        <button><a href="https://www.blueribbonfriedchicken.com/menu-east-village"></a>VIEW MENU</button>
+                        <a href="https://www.blueribbonfriedchicken.com/menu-east-village"><button>VIEW MENU</button></a>
                         
                     </div> 
             </div>
@@ -66,7 +70,7 @@
 
     </section>
 
-    <section class="component"> <!--Photo Grid-->
+    <section class="component" style="position: relative;"> <!--Photo Grid-->
         <div class="photo__grid">
             <img class="square-img" src="components/Images/grid_images/lgmean_plate.avif" alt="Full Tray Meal">
             <img class="square-img" src="components/Images/grid_images/indoor_scene.avif" alt="Resturant Interior">
@@ -79,7 +83,7 @@
         </div>
     </section><!--End Photo Grid-->
 
-    <section class="multi_grid"><!--Environmental Badges-->
+    <section class="container component multi_grid" style="position: relative;"><!--Environmental Badges-->
         <div class="badge__images">
             <a href="https://www.blueribbonfriedchicken.com/about"><img src="components/Images/badges/handcrafted.png" alt="Hand-crafted badge"></a>
             <a href="https://www.blueribbonfriedchicken.com/about"><img src="components/Images/badges/compostable.png" alt="Compostable badge"></a>
@@ -88,36 +92,41 @@
         </div>
     </section><!--End Environmental Badges-->
 
-    <section class="component component__code__bromberg_bros"> <!--Bromberg Brothers-->
+    <section class="component__code__bromberg_bros" style="padding: 50px; text-align: center;"> <!--Bromberg Brothers-->
         
-        
-        <div class="component__code">
+        <div class="bromberg__box">
             <div class="bro_info__img">
                 <img src="components/Images/logos/bw_logo.png" alt="B&W logo">
             </div>
-            <h2>THE BROMBERG BROTHERS</h2>
-            <p>How did two brothers from New Jersey become famous for serving some of the best fried chicken in the country???</p>
-            <button><a href="https://www.blueribbonfriedchicken.com/menu-east-village"></a>ABOUT US</button>
-        </div> 
-        
-        
+
+            <div class="bro_info-text">
+                <h2>THE BROMBERG BROTHERS</h2>
+                <p>How did two brothers from New Jersey become famous for serving some of the best fried chicken in the country???</p>
+                <button><a href="https://www.blueribbonfriedchicken.com/menu-east-village"></a>ABOUT US</button>
+            </div>
+            
+        </div> <!--End bromberg__box-->
 
     </section><!--End Bromberg Brothers-->
    
-    <article class=" component"><!--Location-->
+    <article class="component container location"><!--Location-->
         
-        <div class="chicken"> 
-            <h2>OUR LOCATION</h2>
+        <div class="our-location">
+            <h2>Our Location</h2>
+        </div>
+        <div class="east-village"> 
             <h3>East Village - NY</h3>
-             <p>28 East First Street New York, NY 10003 </p>
+             <p><span>28 East First Street</span> <br>New York, NY 10003 <br></p>
            
-            <p>(212) 228-0404</p>
+            <p><span>(212) 228-0404</span></p>
         </div>
        
-        <div class="chicken">
+        <div class="hours">
             <h3>Hours</h3>
-        <p>Sunday - Webnesday: 11:00 am - 10:00 pm</p>
-        <p>Thursday - Saturday: 11:00 am - 12:00 am</p>
+            <div class="days">
+                <p><span class="hours-day">Sunday - Webnesday:</span><span class="hours-time">11:00 am - 10:00 pm</span></p>
+                <p><span class="hours-day">Thursday - Saturday:</span><span class="hours-time">11:00 am - 12:00 am</span></p>
+             </div>
         </div>
         
 

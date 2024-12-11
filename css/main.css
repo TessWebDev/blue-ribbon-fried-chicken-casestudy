@@ -7,7 +7,12 @@
     --white: #fff; /*Header and body background*/
     --medium-grey: #333; /*above footer*/
     --blue-dark: #0a4f8a;
-    --font-button: 
+    --view-transition-name: root;
+}
+
+::selection {
+    color: #fff;
+    background-color: #080808;
 }
 
 html {
@@ -15,6 +20,7 @@ html {
     display: block;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    flex-grow: 0;
 }
 
 *,
@@ -27,6 +33,7 @@ html, body {
     background-color: #333;
     min-height: 100%;
     font-size: 16px;
+    
 }
 body {
     display: block;
@@ -35,11 +42,13 @@ body {
     line-height: 1.667;
     font-size: 16px;
     min-height: 100%;
+    margin: 0;
 
     position: relative;
     padding-top: 0;
     padding-bottom: 0;
     overflow-x: hidden;
+    background-color: #fff;
 }
 
 h1,
@@ -95,7 +104,7 @@ a {
     border: none;
     padding: 0;
     transition: none;
-    background-color: rgba(0, 0, 0, 0);
+    
 }
 
 .container-fluid {
@@ -109,10 +118,15 @@ img {
     max-width: 100%;
     display: block;
     position: relative;
-    vertical-align: middle;
+    
     border: 0;
     overflow: clip;
 }
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 
 .component img {
     max-width: initial;
@@ -133,10 +147,11 @@ div {
 .container {
     padding-left: 16px;
     padding-right: 16px;
-    width: 1180px;
+    width: 1300px;
     margin-right: auto;
     margin-left: auto;
     background-color: white;
+    position: relative;
     
 }
 
@@ -413,7 +428,7 @@ button {
   }
 
 .navbar {
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     list-style: none;
     backface-visibility: hidden;
@@ -468,7 +483,7 @@ button {
     text-indent: -999px;
     overflow: hidden;
     background-size: contain;
-    background-position: center center;
+    
     background-repeat: no-repeat;
     transform: translateZ(0);
 }
